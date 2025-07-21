@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/image/favicon.png" type="image/x-icon">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap"
+    rel="stylesheet">
+  <!-- Remix icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    :root {
+      --body-font: "Montserrat Alternates", sans-serif;
+      --second-font: "Unbounded", sans-serif;
+    }
+  </style>
+</head>
+
+<body style="font-family: var(--body-font);">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full bg-[#F99123] z-10" id="header">
+    <nav class="relative h-[3.5rem] flex justify-between items-center mx-6">
+      <a href="$" class="flex items-center gap-1">
+        <img src="./assets/image/logo.svg" class="w-[1.5rem]" alt="logo">
+        <div class="text-sm font-semibold leading-4">Fried <br> Chicken</div>
+      </a>
+
+      <div id="navMenu"
+        class="fixed top-0 -right-[100%] w-[260px] bg-[#F99123] h-screen px-16 py-20 shadow-gray-700 shadow-lg text-sm font-semibold z-20 transition-all duration-300"
+        style="font-family: var(--second-font);">
+        <ul class="flex flex-col gap-12">
+          <li class="hover:text-white"><a class="transition-colors duration-300" id="nav-list" href="#home">HOME</a>
+          </li>
+          <li class="hover:text-white"><a class="transition-colors duration-300" id="nav-list" href="#about">ABOUT
+              US</a></li>
+          <li class="hover:text-white"><a class="transition-colors duration-300" id="nav-list" href="#order">ORDERS</a>
+          </li>
+          <li class="hover:text-white"><a class="transition-colors duration-300" id="nav-list" href="#combo">COMBO</a>
+          </li>
+          <li class="hover:text-white"><a class="transition-colors duration-300" id="nav-list"
+              href="#contect">CONTACT</a></li>
+        </ul>
+
+        <!-- Close Button -->
+        <div class="flex text-lg cursor-pointer absolute top-[16px] right-[22px]" id="data-toggle-close">
+          <i class="ri-close-large-line"></i>
+        </div>
+      </div>
+
+      <!-- Toggle Button -->
+      <div class="flex text-lg cursor-pointer" id="data-toggle-open">
+        <i class="ri-apps-2-fill"></i>
+      </div>
+
+      <div class="fixed top-0 left-0 w-full h-screen bg-black opacity-40 hidden transition-all duration-300" id="data-toggle-overlay"></div>
+
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <div>
+    <!-- Home -->
+    <section class="bg-[#F99123] w-full">
+      <div class="px-6 pt-[100px] grid gap-16">
+        <div class="relative text-center">
+          <h1 class="font-bold text-4xl mb-2" style="font-family: var(--second-font);">Crispy & <br>
+            Tasty <span class="text-white">Fried</span> <br>
+            <span class="text-white">Chicken</span>
+          </h1>
+
+          <p class="text-sm mb-7">Come enjoy the best and crispiest fried
+            chicken made with the best ingredients,
+            one bite and you'll want more.</p>
+
+          <a href="#about" class="px-6 py-3 bg-black text-white rounded-md hover:shadow-lg">About Fried Chicken</a>
+
+          <img class="absolute drop-shadow-xl top-14 -right-4 w-[50px]" src="./assets/image/chicken-dam-1.png" alt="">
+          <img class="absolute drop-shadow-xl -top-12 -left-8 w-[70px]" src="./assets/image/chicken-dam-5.png" alt="">
+        </div>
+        <div class="relative mb-10">
+          <img class="relative w-[280px] drop-shadow-xl" src="./assets/image/home-img.png" alt="">
+
+          <img class="absolute drop-shadow-xl -top-10 -right-4 w-[60px]" src="./assets/image/chicken-dam-1.png" alt="">
+          <img class="absolute drop-shadow-xl right-5 -bottom-4 w-[50px]" src="./assets/image/chicken-dam-2.png" alt="">
+          <img class="absolute drop-shadow-xl top-14 -left-8 w-[70px]" src="./assets/image/chicken-dam-4.png" alt="">
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Custom Javascript -->
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
